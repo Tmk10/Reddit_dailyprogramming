@@ -25,6 +25,3 @@ def kaprekar_routine_2(number):
         number = int("".join(sorted(number,reverse=True))) - int("".join(sorted(number)))
         counter+=1
     return counter
-
-for number in range(1000,10000):
-    print(kaprekar_routine_2(number))
