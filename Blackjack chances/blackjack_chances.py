@@ -48,6 +48,3 @@ def play_bj(games):
         if result[1] == 21:
             counter += 1
     print("After {} games was {} blackjacks at %{:.1f}".format(games,counter,(counter/games) *100))
-
-
-
