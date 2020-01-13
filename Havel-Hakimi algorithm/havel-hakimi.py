@@ -7,7 +7,7 @@ def havel_hakimi(responses: list):
             if n > len(responses):
                 return False
             for x in range(n):
-               responses[x] -= 1
+                responses[x] -= 1
 
     return True
 
