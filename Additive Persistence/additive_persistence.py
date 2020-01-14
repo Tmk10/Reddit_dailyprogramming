@@ -1,15 +1,15 @@
-def additive_persitance(number: int):
-    counter = 0
-    quotient = 1
-    digits = []
-    while quotient:
+def additive_persitence(number: int):
+    if number < 9:
+        return 0
+    new_number = 0
+    while number:
         quotient, reminder = divmod(number, 10)
-        digits.append(reminder)
+        number = quotient
+        new_number += reminder
 
-    number = sum(digits)
-    if number > 9:
-        counter += 1
-        additive_persitance(number)
+    if new_number > 9:
+        return 1 + additive_persitence(new_number)
     else:
-        return counter
+        return 1
+
 
